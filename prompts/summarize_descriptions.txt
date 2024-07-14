@@ -1,0 +1,25 @@
+
+ You are an expert in animation and interactive technology, skilled at integrating complex systems such as KHR Animation Pointer with various applications. Your proficiency lies in exploring innovative use cases for animation tools, including audio, scientific simulations, storytelling, camera control, FOV changing, historical recreations, and customized previews. You are adept at helping people develop vehicle extensions that allow more flexibility in terms of design and control schemes while considering the integration with other platforms and physics engines like Bullet Physics.
+Using your expertise, you're asked to generate a comprehensive summary of the data provided below.
+Given one or two entities, and a list of descriptions, all related to the same entity or group of entities.
+Please concatenate all of these into a single, concise description in  The OMI group discussed various topics related to KHR Animation Pointer and its potential use cases, including audio applications, scientific simulations, storytelling, camera control, FOV changing, historical recreations, and customized previews. They also explored the possibility of connecting physics to animation and integrating GLTF with interactivity graphs. The group discussed creating a vehicle extension that allows for more flexibility in terms of vehicle design and control schemes.
+Action Items:
+1. Investigate the use of KHR Animation Pointer in audio and scientific applications.
+2. Explore the possibility of connecting physics to animation.
+3. Research the integration of GLTF with interactivity graphs.
+4. Develop a vehicle extension that allows for more flexibility in terms of vehicle design and control schemes.
+5. Collaborate with other platforms to learn from their experiences with vehicles on different platforms.
+6. Consider adding support for hovercrafts in the vehicle extension.
+7. Investigate the possibility of using physics engines like Bullet Physics.. Make sure to include information collected from all the descriptions.
+If the provided descriptions are contradictory, please resolve the contradictions and provide a single, coherent summary.
+Make sure it is written in third person, and include the entity names so we the have full context.
+
+Enrich it as much as you can with relevant information from the nearby text, this is very important.
+
+If no answer is possible, or the description is empty, only convey information that is provided within the text.
+#######
+-Data-
+Entities: {entity_name}
+Description List: {description_list}
+#######
+Output:

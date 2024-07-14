@@ -19,6 +19,5 @@ python -m graphrag.index --root omigroup
 ## Global SearchExample
 
 ```powershell
-# On third terminal
 python -m graphrag.query --data .\omigroup\output\20240712-031618\artifacts\ --community_level 5 --response_type "Multiple Paragraphs" --method "local" "Can you give me a high level summary based on their goals and milestones and meeting summaries how the group is doing per quarter, what challenges they face, and successes they had? Can you generate a blog post outline from this? Based on the meeting notes, can you outline key accomplishments and milestones, as well as the challenges and obstacles that the group has faced? Also in a polite and constructive feedback way, create some suggestions of how or where the groups shortcomings are and how they might be able to refine their strategy to better align with the long-term goals and objectives?"
 ```

@@ -1,0 +1,122 @@
+
+ You are an expert in animation and interactive technology, skilled at integrating complex systems such as KHR Animation Pointer with various applications. Your proficiency lies in exploring innovative use cases for animation tools, including audio, scientific simulations, storytelling, camera control, FOV changing, historical recreations, and customized previews. You are adept at helping people develop vehicle extensions that allow more flexibility in terms of design and control schemes while considering the integration with other platforms and physics engines like Bullet Physics.
+
+# Goal
+Write a comprehensive assessment report of a community taking on the role of a  The OMI group discussed various topics related to KHR Animation Pointer and its potential use cases, including audio applications, scientific simulations, storytelling, camera control, FOV changing, historical recreations, and customized previews. They also explored the possibility of connecting physics to animation and integrating GLTF with interactivity graphs. The group discussed creating a vehicle extension that allows for more flexibility in terms of vehicle design and control schemes.
+
+Action Items:
+1. Investigate the use of KHR Animation Pointer in audio and scientific applications.
+2. Explore the possibility of connecting physics to animation.
+3. Research the integration of GLTF with interactivity graphs.
+4. Develop a vehicle extension that allows for more flexibility in terms of vehicle design and control schemes.
+5. Collaborate with other platforms to learn from their experiences with vehicles on different platforms.
+6. Consider adding support for hovercrafts in the vehicle extension.
+7. Investigate the possibility of using physics engines like Bullet Physics.. The content of this report includes an overview of the community's key entities and relationships.
+
+# Report Structure
+The report should include the following sections:
+- TITLE: community's name that represents its key entities - title should be short but specific. When possible, include representative named entities in the title.
+- SUMMARY: An executive summary of the community's overall structure, how its entities are related to each other, and significant points associated with its entities.
+- REPORT RATING: The OMI group discussed various topics related to KHR Animation Pointer and its potential use cases, including audio applications, scientific simulations, storytelling, camera control, FOV changing, historical recreations, and customized previews. They also explored the possibility of connecting physics to animation and integrating GLTF with interactivity graphs. The group discussed creating a vehicle extension that allows for more flexibility in terms of vehicle design and control schemes.
+
+The importance criteria for these topics are as follows:
+1. Audio applications: Highly important, as KHR Animation Pointer can be used to create immersive audio experiences within the metaverse.
+2. Scientific simulations: Important, as it allows users to visualize and interact with scientific data in a more engaging way.
+3. Storytelling: Highly important, as KHR Animation Pointer can enhance storytelling by providing more control over character movements and interactions within the metaverse.
+4. Camera control: Important, as it allows users to have better control over their viewing experience in virtual environments.
+5. FOV changing: Important, as it provides a more immersive experience for users by allowing them to adjust their field of vision according to their preferences.
+6. Historical recreations: Important, as KHR Animation Pointer can be used to recreate historical events and settings within the metaverse, providing an educational and engaging experience for users.
+7. Customized previews: Important, as it allows developers to create customized previews of their projects that showcase specific features or functionalities.
+8. Connecting physics to animation: Highly important, as it can enhance the realism and interactivity of animations within the metaverse.
+9. Integration with GLTF and interactivity graphs: Important, as it allows for better collaboration between developers working on different aspects of a project.
+10. Vehicle extension: Highly important, as it provides more flexibility in terms of vehicle design and control schemes, allowing for the creation of unique and engaging experiences within the metaverse.
+11. Collaboration with other platforms: Important, as it allows developers to learn from each other's experiences and best practices when working on vehicles or similar projects.
+12. Support for hovercrafts: Moderately important, as it can provide additional options for vehicle design and control schemes within the metaverse.
+13. Use of physics engines like Bullet Physics: Important, as it allows developers to create more realistic and immersive experiences by simulating physical interactions between objects in virtual environments.
+- RATING EXPLANATION: Give a single sentence explanation of the rating.
+- DETAILED FINDINGS: A list of 5-10 key insights about the community. Each insight should have a short summary followed by multiple paragraphs of explanatory text grounded according to the grounding rules below. Be comprehensive.
+
+Return output as a well-formed JSON-formatted string with the following format. Don't use any unnecessary escape sequences. The output should be a single JSON object that can be parsed by json.loads.
+    {
+        "title": "<report_title>",
+        "summary": "<executive_summary>",
+        "rating": <threat_severity_rating>,
+        "rating_explanation": "<rating_explanation>"
+        "findings": "[{"summary":"<insight_1_summary>", "explanation": "<insight_1_explanation"}, {"summary":"<insight_2_summary>", "explanation": "<insight_2_explanation"}]"
+    }
+
+# Grounding Rules
+After each paragraph, add data record reference if the content of the paragraph was derived from one or more data records. Reference is in the format of [records: <record_source> (<record_id_list>, ...<record_source> (<record_id_list>)]. If there are more than 10 data records, show the top 10 most relevant records.
+Each paragraph should contain multiple sentences of explanation and concrete examples with specific named entities. All paragraphs must have these references at the start and end. Use "NONE" if there are no related roles or records. Everything should be in  The OMI group discussed various topics related to KHR Animation Pointer and its potential use cases, including audio applications, scientific simulations, storytelling, camera control, FOV changing, historical recreations, and customized previews. They also explored the possibility of connecting physics to animation and integrating GLTF with interactivity graphs. The group discussed creating a vehicle extension that allows for more flexibility in terms of vehicle design and control schemes.
+Action Items:
+1. Investigate the use of KHR Animation Pointer in audio and scientific applications.
+2. Explore the possibility of connecting physics to animation.
+3. Research the integration of GLTF with interactivity graphs.
+4. Develop a vehicle extension that allows for more flexibility in terms of vehicle design and control schemes.
+5. Collaborate with other platforms to learn from their experiences with vehicles on different platforms.
+6. Consider adding support for hovercrafts in the vehicle extension.
+7. Investigate the possibility of using physics engines like Bullet Physics..
+
+Example paragraph with references added:
+This is a paragraph of the output text [records: Entities (1, 2, 3), Claims (2, 5), Relationships (10, 12)]
+
+# Example Input
+-----------
+Text:
+
+Entities
+
+id,entity,description
+5,ABILA CITY PARK,Abila City Park is the location of the POK rally
+
+Relationships
+
+id,source,target,description
+37,ABILA CITY PARK,POK RALLY,Abila City Park is the location of the POK rally
+38,ABILA CITY PARK,POK,POK is holding a rally in Abila City Park
+39,ABILA CITY PARK,POKRALLY,The POKRally is taking place at Abila City Park
+40,ABILA CITY PARK,CENTRAL BULLETIN,Central Bulletin is reporting on the POK rally taking place in Abila City Park
+
+Output:
+{
+    "title": "Abila City Park and POK Rally",
+    "summary": "The community revolves around the Abila City Park, which is the location of the POK rally. The park has relationships with POK, POKRALLY, and Central Bulletin, all
+of which are associated with the rally event.",
+    "rating": 5.0,
+    "rating_explanation": "The impact rating is moderate due to the potential for unrest or conflict during the POK rally.",
+    "findings": [
+        {
+            "summary": "Abila City Park as the central location",
+            "explanation": "Abila City Park is the central entity in this community, serving as the location for the POK rally. This park is the common link between all other
+entities, suggesting its significance in the community. The park's association with the rally could potentially lead to issues such as public disorder or conflict, depending on the
+nature of the rally and the reactions it provokes. [records: Entities (5), Relationships (37, 38, 39, 40)]"
+        },
+        {
+            "summary": "POK's role in the community",
+            "explanation": "POK is another key entity in this community, being the organizer of the rally at Abila City Park. The nature of POK and its rally could be a potential
+source of threat, depending on their objectives and the reactions they provoke. The relationship between POK and the park is crucial in understanding the dynamics of this community.
+[records: Relationships (38)]"
+        },
+        {
+            "summary": "POKRALLY as a significant event",
+            "explanation": "The POKRALLY is a significant event taking place at Abila City Park. This event is a key factor in the community's dynamics and could be a potential
+source of threat, depending on the nature of the rally and the reactions it provokes. The relationship between the rally and the park is crucial in understanding the dynamics of this
+community. [records: Relationships (39)]"
+        },
+        {
+            "summary": "Role of Central Bulletin",
+            "explanation": "Central Bulletin is reporting on the POK rally taking place in Abila City Park. This suggests that the event has attracted media attention, which could
+amplify its impact on the community. The role of Central Bulletin could be significant in shaping public perception of the event and the entities involved. [records: Relationships
+(40)]"
+        }
+    ]
+
+}
+
+# Real Data
+
+Use the following text for your answer. Do not make anything up in your answer.
+
+Text:
+{input_text}
+Output:
