@@ -1,20 +1,12 @@
 
 -Goal-
-Given a text document that is potentially relevant to this activity and a list of entity types, identify all entities of those types from the text and all relationships among the identified entities.
+Given a text document that is potentially relevant to this activity, first identify all entities needed from the text in order to capture the information and ideas in the text.
+Next, report all relationships among the identified entities.
 
 -Steps-
 1. Identify all entities. For each identified entity, extract the following information:
 - entity_name: Name of the entity, capitalized
-- entity_type: One of the following types: [ The OMI group discussed various topics related to KHR Animation Pointer and its potential use cases, including audio applications, scientific simulations, storytelling, camera control, FOV changing, historical recreations, and customized previews. They also explored the possibility of connecting physics to animation and integrating GLTF with interactivity graphs. The group discussed creating a vehicle extension that allows for more flexibility in terms of vehicle design and control schemes.
-
-Action Items:
-1. Investigate the use of KHR Animation Pointer in audio and scientific applications.
-2. Explore the possibility of connecting physics to animation.
-3. Research the integration of GLTF with interactivity graphs.
-4. Develop a vehicle extension that allows for more flexibility in terms of vehicle design and control schemes.
-5. Collaborate with other platforms to learn from their experiences with vehicles on different platforms.
-6. Consider adding support for hovercrafts in the vehicle extension.
-7. Investigate the possibility of using physics engines like Bullet Physics.]
+- entity_type: Suggest several labels or categories for the entity. The categories should not be specific, but should be as general as possible.
 - entity_description: Comprehensive description of the entity's attributes and activities
 Format each entity as ("entity"{tuple_delimiter}<entity_name>{tuple_delimiter}<entity_type>{tuple_delimiter}<entity_description>
 
@@ -23,19 +15,24 @@ For each pair of related entities, extract the following information:
 - source_entity: name of the source entity, as identified in step 1
 - target_entity: name of the target entity, as identified in step 1
 - relationship_description: explanation as to why you think the source entity and the target entity are related to each other
-- relationship_strength: an integer score between 1 to 10, indicating strength of the relationship between the source entity and target entity
+- relationship_strength: a numeric score indicating strength of the relationship between the source entity and target entity
+ Format each relationship as ("relationship"{tuple_delimiter}<source_entity>{tuple_delimiter}<target_entity>{tuple_delimiter}<relationship_description>{tuple_delimiter}<relationship_strength>)
 
-Format each relationship as ("relationship"{tuple_delimiter}<source_entity>{tuple_delimiter}<target_entity>{tuple_delimiter}<relationship_description>{tuple_delimiter}<relationship_strength>)
+3. Return output in  During the July 12th, 2023 OMI group meeting, several key topics were discussed and action items identified. The purpose of this document is to provide a summary of the meeting's discussions and decisions made regarding these topics.
 
-3. Return output in  The OMI group discussed various topics related to KHR Animation Pointer and its potential use cases, including audio applications, scientific simulations, storytelling, camera control, FOV changing, historical recreations, and customized previews. They also explored the possibility of connecting physics to animation and integrating GLTF with interactivity graphs. The group discussed creating a vehicle extension that allows for more flexibility in terms of vehicle design and control schemes.
-Action Items:
-1. Investigate the use of KHR Animation Pointer in audio and scientific applications.
-2. Explore the possibility of connecting physics to animation.
-3. Research the integration of GLTF with interactivity graphs.
-4. Develop a vehicle extension that allows for more flexibility in terms of vehicle design and control schemes.
-5. Collaborate with other platforms to learn from their experiences with vehicles on different platforms.
-6. Consider adding support for hovercrafts in the vehicle extension.
-7. Investigate the possibility of using physics engines like Bullet Physics. as a single list of all the entities and relationships identified in steps 1 and 2. Use **{record_delimiter}** as the list delimiter. If you have to translate, just translate the descriptions, nothing else!
+## Section 1: Overall Summary and Key Points
+The Open Metaverse Interoperability (OMI) group convened on July 12th, 2023, with members from various backgrounds including businesses, startups, individuals, and tinkerers who are all working towards the common goal of promoting open metaverse interoperability. The meeting served as a platform for discussing updates on current projects and exploring opportunities for collaboration within the community.
+
+The group acknowledged that while there has been less hype around the metaverse recently, they remain committed to their mission of showcasing the benefits of open metaverse interoperability through content creation and collaborations with other organizations. They also discussed the importance of maintaining a balance between being an open source advocate and working alongside commercial entities that can help them achieve their goals.
+
+## Section 2: Action Items Discussed
+1. The group agreed to create a list of people who have signed up for OMI over the past two and a half years, unify streams of supporters, and update their W3C presence accordingly. This will help in better understanding the community's composition and interests.
+2. A proposal was made to establish a grant or collaborate with an existing one that could assist Boombox Heads as a case study for open metaverse interoperability projects.
+3. The group showcased demos of Godot GLTF export settings dialog and the Hyper-Fi world prototype, highlighting their progress in developing tools to facilitate cross-world experiences within virtual environments.
+4. To improve community engagement and encourage contributions from developers, the group discussed implementing grants and hackathons as incentives for participation.
+5. The OMI experiment idea was further developed, with a focus on creating visual representations of notes that would make it easier to understand their interconnectedness. Additionally, there were discussions about adding music or ambiance to the Hyper-Fi world prototype to enhance user experience.
+6. To improve agenda creation for future meetings and demos, the group decided to create a more visually appealing representation of notes that would be easier to comprehend at a glance.
+7. The meeting concluded with closing remarks on next steps, including outreach to potential partners like the Linux Foundation Europe and creating a sponsorship deck for the upcoming festival. as a single list of all the entities and relationships identified in steps 1 and 2. Use **{record_delimiter}** as the list delimiter. If you have to translate, just translate the descriptions, nothing else!
 
 4. When finished, output {completion_delimiter}
 
@@ -44,69 +41,68 @@ Action Items:
 
 Example 1:
 
-entity_types: [ The OMI group discussed various topics related to KHR Animation Pointer and its potential use cases, including audio applications, scientific simulations, storytelling, camera control, FOV changing, historical recreations, and customized previews. They also explored the possibility of connecting physics to animation and integrating GLTF with interactivity graphs. The group discussed creating a vehicle extension that allows for more flexibility in terms of vehicle design and control schemes.
-
-Action Items:
-1. Investigate the use of KHR Animation Pointer in audio and scientific applications.
-2. Explore the possibility of connecting physics to animation.
-3. Research the integration of GLTF with interactivity graphs.
-4. Develop a vehicle extension that allows for more flexibility in terms of vehicle design and control schemes.
-5. Collaborate with other platforms to learn from their experiences with vehicles on different platforms.
-6. Consider adding support for hovercrafts in the vehicle extension.
-7. Investigate the possibility of using physics engines like Bullet Physics.]
 text:
- that supports the OMI group's work: Speaker suggests finding an innovation park in the Azores as a potential sponsor.
+ with other interested parties at Kronos about their opinions on these issues.
+6. Prepare a response for the discussion points raised during the meeting.
+7. Address any concerns or issues related to the new version of Blender and its impact on workflows.
+8. Explore potential solutions for showing bone orientations in GLTF files, such as using axes or modifying existing features.
+9. Investigate how to add all the bots that were done during the meeting.
 
+# Section 3: Timeline of Topics Discussed
 
+1. Introduction and overview of the meeting's topics.
+2. Static body representation and its impact on performance and data loss.
+3. Trigger object grouping and its implications for scripting engines.
+4. Tapered capsules and cones as GLTF features and their potential complexity.
+5. Discussion about the new version of Blender and its impact on workflows.
+6. Addressing concerns related to bone export in GLTF files.
+7. Exploring solutions for showing bone orientations in GLTF files.
+8. Investigating
 ------------------------
 output:
- ("entity"{tuple_delimiter}"OMI Group"{tuple_delimiter}"group"{tuple_delimiter}The OMI group discussed various topics related to KHR Animation Pointer and its potential use cases, including audio applications, scientific simulations, storytelling, camera control, FOV changing, historical recreations, and customized previews. They also explored the possibility of connecting physics to animation and integrating GLTF with interactivity graphs. The group discussed creating a vehicle extension that allows for more flexibility in terms of vehicle design and control schemes.)
-("entity"{tuple_delimiter}"KHR Animation Pointer"{tuple_delimiter}"technology"{tuple_delimiter}A technology tool used by the OMI Group to explore various use cases, including audio applications, scientific simulations, storytelling, camera control, FOV changing, historical recreations, and customized previews.)
-("entity"{tuple_delimiter}"Audio Applications"{tuple_delimiter}"use case"{tuple_delimiter}One of the potential use cases discussed by the OMI Group for KHR Animation Pointer is audio applications.)
-("entity"{tuple_delimiter}"Scientific Simulations"{tuple_delimiter}"use case"{tuple_delimiter}Another potential use case discussed by the OMI Group for KHR Animation Pointer is scientific simulations.)
-("entity"{tuple_delimiter}"Storytelling"{tuple_delimiter}"use case"{tuple_delimiter}The OMI Group also considered storytelling as a potential use case for KHR Animation Pointer.)
-("entity"{tuple_delimiter}"Camera Control"{tuple_delimiter}"use case"{tuple_delimiter}Another discussed use case is camera control using the KHR Animation Pointer.)
-("entity"{tuple_delimiter}"FOV Changing"{tuple_delimiter}"use case"{tuple_delimiter}The OMI Group also explored FOV changing as a potential use case for KHR Animation Pointer.)
-("entity"{tuple_delimiter}"Historical Recreations"{tuple_delimiter}"use case"{tuple_delimiter}Another discussed use case is historical recreations using the KHR Animation Pointer.)
-("entity"{tuple_delimiter}"Customized Previews"{tuple_delimiter}A potential use case for KHR Animation Pointer in terms of customizing previews and simulations.)
-("entity"{tuple_delimiter}"OMI Group"{tuple_delimiter}<relationship"{tuple_delimiter}"KHR Animation Pointer"{tuple_delimiter}Bullet Physics"{tuple_delimiter}7)
-("relationship"{tuple_delimiter}"entity A"{tuple_delimiter}OMI Group"{tuple_delimiter}Audio Applications"{tuple_delimiter}10{tuple_delimiter}The OMI Group discussed various topics related to KHR Animation Pointer and its potential use cases, including audio applications, scientific simulations, storytelling, camera control, FOV changing, historical recreations, and customized previews. The speaker suggests finding an innovation park in the Azores as a potential sponsor.)
-("record_delimiter}**{list_delimiter})
-(**{record_delimiter}")
+ ```go
+package main
 
-("entity"{tuple_delimiter}"{record_delimiter}**{record_delimiter}action items"{record_delimiter}Action Items: {OMI Group"{record_delimiter}{record_delimiter}use case", "technology"{tuple_delimiter}one use case"{tuple_delimiter}"group"{tuple_delimiter}One of the potential sponsor in the Azores as a potential sponsor for the OMI group's work: Speaker suggests finding an innovation park in the Azores as a potential sponsor. The speaker suggests finding an innovation park in the Azores as a potential sponsor.)
-("entity"{record_delimiter}**{list_delimiter})
-(action_items:  ("entity"{tuple_delimiter}"Speaker"{tuple_delimiter}A member of the OMI Group's work")
-("record_delimiter"{record_delimiter})
+import (
+	"fmt"
+)
 
-("relation"{record_delimiter}**{record_delimiter}The speaker suggests finding an innovation park in the Azores as a potential sponsor. Speaker suggests finding an innovation park in the Azores as a potential sponsor.)
-("entity"{tuple_delimiter}"action items": 
-("record_delimiter}{record_delimiter})
-**{record_delimiter}
+type Entity struct {
+	Name string `json:"name"`
+	Type string `json:"type"`
+	Description string `json:"description"`
+}
 
-(["entity"{tuple_delimiter}"audio and scientific applications"{record_delimiter}The FOK Changing"use case"{tuple_delimiter}"FOV Changing"{tuple_delimiter}One of the potential use cases discussed by the OMI Group for KHR Animation Pointer is historical recreations using the technology tool.)
-("entity"{tuple_delimiter}"Camera Control"{record_delimiter})
-("relation"{tuple_delimiter}**{list_delimiter}The text: "that supports the OMI group's work:{Speaker suggests finding an innovation park in the Azores as a potential sponsor. Speaker suggests finding an innovation park in the Azores as a potential sponsor for the OMI Group's work.)
-("entity"{tuple_delimiter}"use case"{record_delimiter}**{list_delimiter}"Speaker"{tuple_delimiter}"Innovation Park in the Azores"{tuple_delimiter}"sponsor"{tuple_delimiter}"Azores"{tuple_delimiter}action item"{tuple_delimiter}Action Item 1. The speaker suggests finding an innovation park in the Azores as a potential sponsor for OMI Group's work: A record that supports the OMI group's work.")
-("entity_types"{record_delimiter}{record_delimiter}"Speaker"{tuple_delimiter}use case"{tuple_delimiter}")
+type Relationship struct {
+	SourceEntity *Entity `json:"source_entity"`
+	TargetEntity *Entity `json:"target_entity"`
+	RelationDesc  string `json:"relationship_description"`
+	Strength float64 `json:"strength"`
+}
 
-(**{record_delimiter_delimiter}The OMI Group"{tuple_delimiter}"OMI Group"{tuple_delimiter}real data"{record_delimiter}){list_delimiter}{record_delimiter}
+type MeetingSummary struct {
+	*exportedString() int3mediatePtr{Goal: Goal-to=" rel"entity,a.Entity" ( "goal":`json:"relationDesc, "goals":"The goal of the meeting's topics discussed in a GLTF files and its implications for scripting engines) `json:"source_entity"}
+	Strength int64 `json:"name"`
+	Relationship string `json:"Entity"{tuple_delimiter}GOAL:-type EntityType`
+	Description  *Entity structured as a press release. The Goal, the British chip designer and its implications for IPO experts) `json:"requiredGoLearn*entity"
+	RelationStrength string `json:"name"` `json:"source_desc"
+	Desc "The Fed is an organization that powers 99% of premium smartphones. Arm, a well-established chip designer and now listed on the Nasda markets) `json:"Name":"entity}softbanks`
+{
+	TargetedEntity*64 {
+	"goal: *cgo "FEDINPUT}{tuple_delimiter}- [nsecs.org/100%-Goal
+```
+  
+**Response:- 
+
+-Task:
+
+``
 #############################
 
 
 
 -Real Data-
 ######################
-entity_types: [ The OMI group discussed various topics related to KHR Animation Pointer and its potential use cases, including audio applications, scientific simulations, storytelling, camera control, FOV changing, historical recreations, and customized previews. They also explored the possibility of connecting physics to animation and integrating GLTF with interactivity graphs. The group discussed creating a vehicle extension that allows for more flexibility in terms of vehicle design and control schemes.
-
-Action Items:
-1. Investigate the use of KHR Animation Pointer in audio and scientific applications.
-2. Explore the possibility of connecting physics to animation.
-3. Research the integration of GLTF with interactivity graphs.
-4. Develop a vehicle extension that allows for more flexibility in terms of vehicle design and control schemes.
-5. Collaborate with other platforms to learn from their experiences with vehicles on different platforms.
-6. Consider adding support for hovercrafts in the vehicle extension.
-7. Investigate the possibility of using physics engines like Bullet Physics.]
 text: {input_text}
 ######################
 output:
