@@ -10,7 +10,6 @@ ollama pull nomic-embed-text:v1.5
 $env:OLLAMA_HOST="127.0.0.1:1234"
 ollama serve
 pip install git+https://github.com/MarkJGx/graphrag@markjg/fix-json-parsing
-python -m graphrag.prompt_tune --root omigroup --no-entity-types # Fine tune the prompt for better performance
 # Resume from an earlier snapshot
 # python -m graphrag.index --root omigroup --resume 20240712-031618
 python -m graphrag.index --root omigroup
